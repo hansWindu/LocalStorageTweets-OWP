@@ -1,0 +1,19 @@
+.base {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(0deg, #21295C 25%, #1B3B6F 50%, #065A82 75%);
+}
+.base .inserta {
+  width: 100%;
+  height: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.base .inserta__logo {
+  text-align: center;
+  width: 80%;
+  background-color: white;
+  align-self: center;
+}
