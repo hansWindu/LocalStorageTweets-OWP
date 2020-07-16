@@ -18,11 +18,13 @@
 <body>
     <div class="base">
         <div class="inserta">
-            <p class="inserta__logo">
-                Inserta tus Tweets:
-            </p>
-            <textarea name="Area-Tweets" class="inserta__text" id="inserta__text" cols="30" rows="10"></textarea>
-            <input type="button" value="Agregar" class="inserta__button">
+            <form action="#" id="inserta__formulario">
+                <label class="inserta__logo" for="inserta__text">
+                    Inserta tus Tweets:
+                </label>
+                <textarea name="Area-Tweets" class="inserta__text" id="inserta__text" cols="30" rows="10"></textarea>
+                <input type="submit" value="Agregar" class="inserta__button">
+            </form>
         </div>
         <div class="tweets">
             <p class="tweets__logo">
@@ -33,5 +35,6 @@
             </div>
         </div>
     </div>
+    <script src="js/index.js"></script>
 </body>
 </html>
