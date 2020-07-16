@@ -18,11 +18,16 @@ function agregarTweet(e) {
     e.preventDefault();
     //leer el valor de const area
     const tweet = document.getElementById('inserta__text').value;
-    console.log(tweet)
     // Crear elemento y añadirle contenido a la lista
-    // const li = document.createElement('li');
-    // li.innerText = tweet;
-    // listaTweets.appendChild(li);
-    // console.log(tweet);
+    const li = document.createElement('li');
+    li.innerText = tweet;
+    li.classList = 'inserta__li';
+    listaTweets.appendChild(li);
+    // Crear elemento y añadirlo al final del tweet (li)
+    const borrarTweet = document.createElement('a');
+    borrarTweet.classList = '';
+    borrarTweet.innerText = 'X';
+    li.appendChild(borrarTweet);    
+    
 
 } 
