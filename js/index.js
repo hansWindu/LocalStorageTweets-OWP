@@ -9,6 +9,8 @@ eventListeners();
 function eventListeners() {
     // Cuando se envia el formulario
     document.querySelector('#inserta__formulario').addEventListener('submit', agregarTweet);
+
+    listaTweets.addEventListener('click', borrarTweet)
 }
 
 // Funciones 
@@ -24,10 +26,17 @@ function agregarTweet(e) {
     tweetEscupido.classList = 'tweets__li';
     listaTweets.appendChild(tweetEscupido);
     // Crear elemento y añadirlo al final del tweet (li)
-    const borrarTweet = document.createElement('a');
-    borrarTweet.classList = '';
-    borrarTweet.innerText = 'X';
-    tweetEscupido.appendChild(borrarTweet);    
-    
+    const borrarX = document.createElement('a');
+    borrarX.classList = 'X';
+    borrarX.innerText = 'X';
+    tweetEscupido.appendChild(borrarX);    
+}
 
-} 
+function borrarTweet(e) {
+    e.preventDefault();
+
+    if (e.target.className === 'X'){
+        e.target.parentElement.remove();
+        
+    }
+}

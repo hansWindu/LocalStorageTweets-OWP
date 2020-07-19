@@ -80,3 +80,7 @@ body {
   padding: 0 0.5rem;
   background-color: white;
 }
+.base .X {
+  color: red;
+  cursor: pointer;
+}
