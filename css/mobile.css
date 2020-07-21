@@ -16,44 +16,43 @@ body {
 .base .inserta__formulario {
   display: flex;
   flex-direction: column;
-  padding-top: 1rem;
+  background-color: white;
+  width: 90%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin: auto;
+  margin-top: 1rem;
 }
 .base .inserta__logo {
   text-align: center;
-  width: 80%;
-  background-color: white;
+  width: 100%;
   align-self: center;
-  padding: 0.5rem 0;
-  margin-bottom: 0;
-  border: 1px #00000031 solid;
-  border-top-right-radius: 1rem;
-  border-top-left-radius: 1rem;
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
+  padding: 1rem 0;
 }
 .base .inserta__text {
-  width: 69.63%;
+  width: 90%;
   align-self: center;
   height: 10rem;
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   outline: none;
-  border: none;
-  border: 1px #0000001a solid;
-  padding: 1rem;
+  margin-bottom: 1rem;
 }
 .base .inserta__button {
-  width: 80.5%;
+  width: 100%;
   align-self: center;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
   border: none;
   outline: none;
-  border: 1px #0000001a solid;
   font-family: "Quicksand", sans-serif;
-  padding: 0.5rem 0;
   background-color: #43B0DB;
   cursor: pointer;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 1rem 0;
 }
 .base .tweets {
   width: 100%;
@@ -74,8 +73,6 @@ body {
   display: flex;
   justify-content: space-between;
   width: 90%;
-  height: 2rem;
-  align-items: center;
   border-radius: 2rem;
   margin: 1rem auto;
   padding: 0 0.5rem;
